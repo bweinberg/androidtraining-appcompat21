@@ -6,7 +6,17 @@ Se quiere "migrar" el proyecto para soportar widgets de Material Design, puntual
 
 Para esto:
 
-1) Hacer que el proyecto "soporte" AppCompat, modificando lo que corresponda en build.gradle y themes
+1) Hacer que el proyecto soporte AppCompat, modificando lo que corresponda en build.gradle y themes: 
+
+        compileSdkVersion 21
+        buildToolsVersion "21.0.0"
+        
+        minSdkVersion 14
+        targetSdkVersion 21
+        
+        compile 'com.android.support:appcompat-v7:21.+'
+
 2) Reemplazar ListView por RecyclerView. 
+
 3) Al hacer click sobre un elemento de la lista, que nos lleve a una CardView con la información más detallada del item (en este caso, pondremos los mismos datos, pero con una imagen por default).
 
